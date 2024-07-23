@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+
+.image{
+    width: 40%;
+    background-color: red;
+    background: url(../images/hero-desktop.jpg) no-repeat;
+    background-size: cover
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px;
+}
+
+.title{
+    max-width: 450px;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 20px;
+    margin-top: 150px
+}
+
+h1 > span{
+    font-weight: 300;
+    color: var(--Desaturated-Red);
+}
+
+.title p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: var(--Desaturated-Red);
+    line-height: 25px;
+}
+
+.form{
+display: flex;
+flex-direction: row;
+}
+
+input{
+    padding: 15px;
+    border: 2px solid var(--Soft-Red);
+}
